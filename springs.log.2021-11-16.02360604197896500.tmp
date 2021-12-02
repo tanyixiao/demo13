@@ -1,0 +1,216 @@
+2021-11-16 01:35:57.440  INFO 21028 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-16 01:35:57.446  INFO 21028 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2021-11-16 01:35:57.447  INFO 21028 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-11-16 17:44:06.671  INFO 19024 --- [restartedMain] com.example.goods.GoodsApplication       : Starting GoodsApplication on MSI with PID 19024 (E:\vuefile\demo\demo13\GoodServer\Goods\target\classes started by xiao in E:\vuefile\demo\demo13)
+2021-11-16 17:44:06.673 DEBUG 19024 --- [restartedMain] com.example.goods.GoodsApplication       : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2021-11-16 17:44:06.674  INFO 19024 --- [restartedMain] com.example.goods.GoodsApplication       : No active profile set, falling back to default profiles: default
+2021-11-16 17:44:06.699  INFO 19024 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-16 17:44:06.699  INFO 19024 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-16 17:44:07.776  INFO 19024 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2c851d9b' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-16 17:44:07.779  INFO 19024 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-16 17:44:08.131  INFO 19024 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2021-11-16 17:44:08.156  INFO 19024 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-16 17:44:08.156  INFO 19024 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-11-16 17:44:08.235  INFO 19024 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-16 17:44:08.235  INFO 19024 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1536 ms
+2021-11-16 17:44:08.953  WARN 19024 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.example.goods.Dao.OrderCartMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2021-11-16 17:44:08.956  WARN 19024 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.example.goods.Dao.OrderCartMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2021-11-16 17:44:08.976  WARN 19024 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.example.goods.Dao.OrderMasterMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2021-11-16 17:44:08.979  WARN 19024 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.example.goods.Dao.OrderMasterMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2021-11-16 17:44:09.310  WARN 19024 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : This primary key of "good_c_id" is primitive !不建议如此请使用包装类 in Class: "com.example.goods.pojo.Good_comment"
+2021-11-16 17:44:09.329  WARN 19024 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : This primary key of "good_id" is primitive !不建议如此请使用包装类 in Class: "com.example.goods.pojo.Goods"
+2021-11-16 17:44:09.390  WARN 19024 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.example.goods.pojo.GoodBrand"
+2021-11-16 17:44:09.417  WARN 19024 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : This primary key of "color_id" is primitive !不建议如此请使用包装类 in Class: "com.example.goods.pojo.Good_color"
+2021-11-16 17:44:09.430  WARN 19024 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.example.goods.pojo.Good_detali"
+2021-11-16 17:44:09.443  WARN 19024 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : This primary key of "good_i_id" is primitive !不建议如此请使用包装类 in Class: "com.example.goods.pojo.Good_inventory"
+2021-11-16 17:44:09.455  WARN 19024 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : This primary key of "size_id" is primitive !不建议如此请使用包装类 in Class: "com.example.goods.pojo.Good_size"
+2021-11-16 17:44:09.467  WARN 19024 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.example.goods.pojo.Gooddetaliname"
+2021-11-16 17:44:09.483  WARN 19024 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : This primary key of "good_t_id" is primitive !不建议如此请使用包装类 in Class: "com.example.goods.pojo.Good_type"
+2021-11-16 17:44:09.500  WARN 19024 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : This primary key of "users_id" is primitive !不建议如此请使用包装类 in Class: "com.example.goods.pojo.User"
+2021-11-16 17:44:09.834  INFO 19024 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-11-16 17:44:09.856  INFO 19024 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1f132b73, org.springframework.security.web.context.SecurityContextPersistenceFilter@4550cd4e, org.springframework.security.web.header.HeaderWriterFilter@742091dc, org.springframework.web.filter.CorsFilter@564a5beb, org.springframework.security.web.authentication.logout.LogoutFilter@7efb4d08, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@e052968, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@b86153a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@22c29480, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@399308ab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24d124ae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4e2b72d2, org.springframework.security.web.session.SessionManagementFilter@381cb7cf, org.springframework.security.web.access.ExceptionTranslationFilter@20b50e68, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@212241e5]
+2021-11-16 17:44:09.880  INFO 19024 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-16 17:44:10.018  INFO 19024 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-16 17:44:10.058  INFO 19024 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2021-11-16 17:44:10.073  INFO 19024 --- [restartedMain] com.example.goods.GoodsApplication       : Started GoodsApplication in 3.864 seconds (JVM running for 5.619)
+2021-11-16 17:44:10.195  INFO 19024 --- [RMI TCP Connection(1)-192.168.35.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-16 17:44:10.196  INFO 19024 --- [RMI TCP Connection(1)-192.168.35.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-16 17:44:10.200  INFO 19024 --- [RMI TCP Connection(1)-192.168.35.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2021-11-16 17:44:10.404  INFO 19024 --- [RMI TCP Connection(3)-192.168.35.1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-11-16 17:45:57.830  INFO 19024 --- [http-nio-9002-exec-1] com.example.goods.Service.TypeService    : 一级分类查询
+2021-11-16 17:45:57.904  WARN 19024 --- [http-nio-9002-exec-1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.35.130:3306/spring_clouds03?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT&allowPublicKeyRetrieval=true, version : 1.2.8, lastPacketReceivedIdleMillis : 106747
+2021-11-16 17:45:57.919 DEBUG 19024 --- [http-nio-9002-exec-1] c.example.goods.Dao.typeDao.selectList   : ==>  Preparing: SELECT good_t_id,good_t_name,parent_id,category_level,type_desc,image,updatetime FROM good_type WHERE (parent_id = ?) ORDER BY updatetime DESC
+2021-11-16 17:45:57.932 DEBUG 19024 --- [http-nio-9002-exec-1] c.example.goods.Dao.typeDao.selectList   : ==> Parameters: 0(Integer)
+2021-11-16 17:45:57.968 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.goodsDao.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM goods WHERE deleted = 0 AND (good_name LIKE ?)
+2021-11-16 17:45:57.968 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.goodsDao.selectPage_mpCount    : ==> Parameters: %%(String)
+2021-11-16 17:45:57.986 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.goodsDao.selectPage_mpCount    : <==      Total: 1
+2021-11-16 17:45:57.990 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.goodsDao.selectPage  : ==>  Preparing: SELECT good_id,good_name,good_price,good_account,good_sale_price,good_not,newproducts,goodonshelf,good_type_id01,good_type_id02,good_type_id03,goodsid,saves,pageviews,good_brand_id,deleted,version,createtime,updatetime FROM goods WHERE deleted=0 AND (good_name LIKE ?) ORDER BY updatetime DESC LIMIT ?
+2021-11-16 17:45:57.990 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.goodsDao.selectPage  : ==> Parameters: %%(String), 5(Long)
+2021-11-16 17:45:58.029 DEBUG 19024 --- [http-nio-9002-exec-1] c.example.goods.Dao.typeDao.selectList   : <==      Total: 3
+2021-11-16 17:45:58.030 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.goodsDao.selectPage  : <==      Total: 5
+2021-11-16 17:45:58.030  INFO 19024 --- [http-nio-9002-exec-1] com.example.goods.Service.TypeService    : 二级分类查询
+2021-11-16 17:45:58.031 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.BrandDao.selectById  : ==>  Preparing: SELECT good_b_id,good_b_name,img,brandDesc,updatetime FROM good_brand WHERE good_b_id=?
+2021-11-16 17:45:58.031 DEBUG 19024 --- [http-nio-9002-exec-1] c.example.goods.Dao.typeDao.selectList   : ==>  Preparing: SELECT good_t_id,good_t_name,parent_id,category_level,type_desc,image,updatetime FROM good_type WHERE (parent_id = ?)
+2021-11-16 17:45:58.031 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.BrandDao.selectById  : ==> Parameters: 7(Integer)
+2021-11-16 17:45:58.031 DEBUG 19024 --- [http-nio-9002-exec-1] c.example.goods.Dao.typeDao.selectList   : ==> Parameters: 3(Integer)
+2021-11-16 17:45:58.032 DEBUG 19024 --- [http-nio-9002-exec-1] c.example.goods.Dao.typeDao.selectList   : <==      Total: 0
+2021-11-16 17:45:58.033 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.BrandDao.selectById  : <==      Total: 1
+2021-11-16 17:45:58.033  INFO 19024 --- [http-nio-9002-exec-1] com.example.goods.Service.TypeService    : 二级分类查询
+2021-11-16 17:45:58.034 DEBUG 19024 --- [http-nio-9002-exec-1] c.example.goods.Dao.typeDao.selectList   : ==>  Preparing: SELECT good_t_id,good_t_name,parent_id,category_level,type_desc,image,updatetime FROM good_type WHERE (parent_id = ?)
+2021-11-16 17:45:58.034 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.typeDao.selectList   : ==>  Preparing: SELECT good_t_id,good_t_name,parent_id,category_level,type_desc,image,updatetime FROM good_type WHERE (good_t_id = ?)
+2021-11-16 17:45:58.034 DEBUG 19024 --- [http-nio-9002-exec-1] c.example.goods.Dao.typeDao.selectList   : ==> Parameters: 19(Integer)
+2021-11-16 17:45:58.034 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.typeDao.selectList   : ==> Parameters: 5(Integer)
+2021-11-16 17:45:58.036 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.typeDao.selectList   : <==      Total: 0
+2021-11-16 17:45:58.036 DEBUG 19024 --- [http-nio-9002-exec-1] c.example.goods.Dao.typeDao.selectList   : <==      Total: 1
+2021-11-16 17:45:58.036  INFO 19024 --- [http-nio-9002-exec-1] com.example.goods.Service.TypeService    : 三级分类查询
+2021-11-16 17:45:58.037 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.inventoryDao.selectList    : ==>  Preparing: SELECT good_i_id,good_i_count,colors_id,goods_id,sizes_id FROM good_inventory WHERE (goods_id = ?)
+2021-11-16 17:45:58.037 DEBUG 19024 --- [http-nio-9002-exec-1] c.example.goods.Dao.typeDao.selectList   : ==>  Preparing: SELECT good_t_id,good_t_name,parent_id,category_level,type_desc,image,updatetime FROM good_type WHERE (parent_id = ?)
+2021-11-16 17:45:58.037 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.inventoryDao.selectList    : ==> Parameters: 24(Integer)
+2021-11-16 17:45:58.038 DEBUG 19024 --- [http-nio-9002-exec-1] c.example.goods.Dao.typeDao.selectList   : ==> Parameters: 21(Integer)
+2021-11-16 17:45:58.038 DEBUG 19024 --- [http-nio-9002-exec-1] c.example.goods.Dao.typeDao.selectList   : <==      Total: 0
+2021-11-16 17:45:58.039  INFO 19024 --- [http-nio-9002-exec-1] com.example.goods.Service.TypeService    : 二级分类查询
+2021-11-16 17:45:58.039 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.inventoryDao.selectList    : <==      Total: 2
+2021-11-16 17:45:58.039 DEBUG 19024 --- [http-nio-9002-exec-1] c.example.goods.Dao.typeDao.selectList   : ==>  Preparing: SELECT good_t_id,good_t_name,parent_id,category_level,type_desc,image,updatetime FROM good_type WHERE (parent_id = ?)
+2021-11-16 17:45:58.040 DEBUG 19024 --- [http-nio-9002-exec-1] c.example.goods.Dao.typeDao.selectList   : ==> Parameters: 20(Integer)
+2021-11-16 17:45:58.040 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.sizeDao.selectList   : ==>  Preparing: SELECT size_id,size_name FROM good_size WHERE (size_id = ?)
+2021-11-16 17:45:58.040 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.sizeDao.selectList   : ==> Parameters: 35(Integer)
+2021-11-16 17:45:58.041 DEBUG 19024 --- [http-nio-9002-exec-1] c.example.goods.Dao.typeDao.selectList   : <==      Total: 1
+2021-11-16 17:45:58.041  INFO 19024 --- [http-nio-9002-exec-1] com.example.goods.Service.TypeService    : 三级分类查询
+2021-11-16 17:45:58.041 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.sizeDao.selectList   : <==      Total: 1
+2021-11-16 17:45:58.042 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.ColorDao.selectList  : ==>  Preparing: SELECT color_id,color_name,color_url_img FROM good_color WHERE (color_id = ?)
+2021-11-16 17:45:58.042 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.ColorDao.selectList  : ==> Parameters: 35(Integer)
+2021-11-16 17:45:58.043 DEBUG 19024 --- [http-nio-9002-exec-1] c.example.goods.Dao.typeDao.selectList   : ==>  Preparing: SELECT good_t_id,good_t_name,parent_id,category_level,type_desc,image,updatetime FROM good_type WHERE (parent_id = ?)
+2021-11-16 17:45:58.043 DEBUG 19024 --- [http-nio-9002-exec-1] c.example.goods.Dao.typeDao.selectList   : ==> Parameters: 22(Integer)
+2021-11-16 17:45:58.044 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.ColorDao.selectList  : <==      Total: 1
+2021-11-16 17:45:58.044 DEBUG 19024 --- [http-nio-9002-exec-1] c.example.goods.Dao.typeDao.selectList   : <==      Total: 0
+2021-11-16 17:45:58.047 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.sizeDao.selectList   : ==>  Preparing: SELECT size_id,size_name FROM good_size WHERE (size_id = ?)
+2021-11-16 17:45:58.047 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.sizeDao.selectList   : ==> Parameters: 36(Integer)
+2021-11-16 17:45:58.048 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.sizeDao.selectList   : <==      Total: 1
+2021-11-16 17:45:58.050 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.ColorDao.selectList  : ==>  Preparing: SELECT color_id,color_name,color_url_img FROM good_color WHERE (color_id = ?)
+2021-11-16 17:45:58.050 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.ColorDao.selectList  : ==> Parameters: 36(Integer)
+2021-11-16 17:45:58.052 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.ColorDao.selectList  : <==      Total: 1
+2021-11-16 17:45:58.053 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.GoodsDetaDao.selectList    : ==>  Preparing: SELECT id,gdurl,goods_id,gdname_id FROM goods_goodsdetail WHERE (goods_id = ?)
+2021-11-16 17:45:58.054 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.GoodsDetaDao.selectList    : ==> Parameters: 24(Integer)
+2021-11-16 17:45:58.057 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.GoodsDetaDao.selectList    : <==      Total: 3
+2021-11-16 17:45:58.061 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : ==>  Preparing: SELECT data_id,gdname,gdvalue FROM goods_goodsdetailname WHERE (data_id = ?)
+2021-11-16 17:45:58.061 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : ==> Parameters: 17(Integer)
+2021-11-16 17:45:58.063 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : <==      Total: 1
+2021-11-16 17:45:58.065 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : ==>  Preparing: SELECT data_id,gdname,gdvalue FROM goods_goodsdetailname WHERE (data_id = ?)
+2021-11-16 17:45:58.065 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : ==> Parameters: 18(Integer)
+2021-11-16 17:45:58.067 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : <==      Total: 1
+2021-11-16 17:45:58.070 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : ==>  Preparing: SELECT data_id,gdname,gdvalue FROM goods_goodsdetailname WHERE (data_id = ?)
+2021-11-16 17:45:58.070 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : ==> Parameters: 19(Integer)
+2021-11-16 17:45:58.071 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : <==      Total: 1
+2021-11-16 17:45:58.072 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.BrandDao.selectById  : ==>  Preparing: SELECT good_b_id,good_b_name,img,brandDesc,updatetime FROM good_brand WHERE good_b_id=?
+2021-11-16 17:45:58.072 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.BrandDao.selectById  : ==> Parameters: 6(Integer)
+2021-11-16 17:45:58.073 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.BrandDao.selectById  : <==      Total: 1
+2021-11-16 17:45:58.075 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.typeDao.selectList   : ==>  Preparing: SELECT good_t_id,good_t_name,parent_id,category_level,type_desc,image,updatetime FROM good_type WHERE (good_t_id = ?)
+2021-11-16 17:45:58.076 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.typeDao.selectList   : ==> Parameters: 5(Integer)
+2021-11-16 17:45:58.077 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.typeDao.selectList   : <==      Total: 0
+2021-11-16 17:45:58.078 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.inventoryDao.selectList    : ==>  Preparing: SELECT good_i_id,good_i_count,colors_id,goods_id,sizes_id FROM good_inventory WHERE (goods_id = ?)
+2021-11-16 17:45:58.079 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.inventoryDao.selectList    : ==> Parameters: 19(Integer)
+2021-11-16 17:45:58.080 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.inventoryDao.selectList    : <==      Total: 2
+2021-11-16 17:45:58.081 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.sizeDao.selectList   : ==>  Preparing: SELECT size_id,size_name FROM good_size WHERE (size_id = ?)
+2021-11-16 17:45:58.081 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.sizeDao.selectList   : ==> Parameters: 24(Integer)
+2021-11-16 17:45:58.082 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.sizeDao.selectList   : <==      Total: 1
+2021-11-16 17:45:58.083 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.ColorDao.selectList  : ==>  Preparing: SELECT color_id,color_name,color_url_img FROM good_color WHERE (color_id = ?)
+2021-11-16 17:45:58.083 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.ColorDao.selectList  : ==> Parameters: 24(Integer)
+2021-11-16 17:45:58.084 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.ColorDao.selectList  : <==      Total: 1
+2021-11-16 17:45:58.085 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.sizeDao.selectList   : ==>  Preparing: SELECT size_id,size_name FROM good_size WHERE (size_id = ?)
+2021-11-16 17:45:58.085 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.sizeDao.selectList   : ==> Parameters: 25(Integer)
+2021-11-16 17:45:58.086 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.sizeDao.selectList   : <==      Total: 1
+2021-11-16 17:45:58.087 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.ColorDao.selectList  : ==>  Preparing: SELECT color_id,color_name,color_url_img FROM good_color WHERE (color_id = ?)
+2021-11-16 17:45:58.087 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.ColorDao.selectList  : ==> Parameters: 25(Integer)
+2021-11-16 17:45:58.089 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.ColorDao.selectList  : <==      Total: 1
+2021-11-16 17:45:58.090 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.GoodsDetaDao.selectList    : ==>  Preparing: SELECT id,gdurl,goods_id,gdname_id FROM goods_goodsdetail WHERE (goods_id = ?)
+2021-11-16 17:45:58.090 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.GoodsDetaDao.selectList    : ==> Parameters: 19(Integer)
+2021-11-16 17:45:58.091 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.GoodsDetaDao.selectList    : <==      Total: 1
+2021-11-16 17:45:58.092 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : ==>  Preparing: SELECT data_id,gdname,gdvalue FROM goods_goodsdetailname WHERE (data_id = ?)
+2021-11-16 17:45:58.092 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : ==> Parameters: 8(Integer)
+2021-11-16 17:45:58.093 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : <==      Total: 1
+2021-11-16 17:45:58.093 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.BrandDao.selectById  : ==>  Preparing: SELECT good_b_id,good_b_name,img,brandDesc,updatetime FROM good_brand WHERE good_b_id=?
+2021-11-16 17:45:58.093 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.BrandDao.selectById  : ==> Parameters: 7(Integer)
+2021-11-16 17:45:58.094 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.BrandDao.selectById  : <==      Total: 1
+2021-11-16 17:45:58.095 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.typeDao.selectList   : ==>  Preparing: SELECT good_t_id,good_t_name,parent_id,category_level,type_desc,image,updatetime FROM good_type WHERE (good_t_id = ?)
+2021-11-16 17:45:58.095 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.typeDao.selectList   : ==> Parameters: 5(Integer)
+2021-11-16 17:45:58.096 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.typeDao.selectList   : <==      Total: 0
+2021-11-16 17:45:58.096 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.inventoryDao.selectList    : ==>  Preparing: SELECT good_i_id,good_i_count,colors_id,goods_id,sizes_id FROM good_inventory WHERE (goods_id = ?)
+2021-11-16 17:45:58.097 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.inventoryDao.selectList    : ==> Parameters: 13(Integer)
+2021-11-16 17:45:58.097 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.inventoryDao.selectList    : <==      Total: 1
+2021-11-16 17:45:58.098 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.sizeDao.selectList   : ==>  Preparing: SELECT size_id,size_name FROM good_size WHERE (size_id = ?)
+2021-11-16 17:45:58.098 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.sizeDao.selectList   : ==> Parameters: 4(Integer)
+2021-11-16 17:45:58.099 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.sizeDao.selectList   : <==      Total: 1
+2021-11-16 17:45:58.100 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.ColorDao.selectList  : ==>  Preparing: SELECT color_id,color_name,color_url_img FROM good_color WHERE (color_id = ?)
+2021-11-16 17:45:58.100 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.ColorDao.selectList  : ==> Parameters: 15(Integer)
+2021-11-16 17:45:58.101 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.ColorDao.selectList  : <==      Total: 1
+2021-11-16 17:45:58.102 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.GoodsDetaDao.selectList    : ==>  Preparing: SELECT id,gdurl,goods_id,gdname_id FROM goods_goodsdetail WHERE (goods_id = ?)
+2021-11-16 17:45:58.102 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.GoodsDetaDao.selectList    : ==> Parameters: 13(Integer)
+2021-11-16 17:45:58.102 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.GoodsDetaDao.selectList    : <==      Total: 1
+2021-11-16 17:45:58.104 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : ==>  Preparing: SELECT data_id,gdname,gdvalue FROM goods_goodsdetailname WHERE (data_id = ?)
+2021-11-16 17:45:58.104 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : ==> Parameters: 2(Integer)
+2021-11-16 17:45:58.105 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : <==      Total: 1
+2021-11-16 17:45:58.105 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.BrandDao.selectById  : ==>  Preparing: SELECT good_b_id,good_b_name,img,brandDesc,updatetime FROM good_brand WHERE good_b_id=?
+2021-11-16 17:45:58.105 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.BrandDao.selectById  : ==> Parameters: 4(Integer)
+2021-11-16 17:45:58.106 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.BrandDao.selectById  : <==      Total: 1
+2021-11-16 17:45:58.107 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.typeDao.selectList   : ==>  Preparing: SELECT good_t_id,good_t_name,parent_id,category_level,type_desc,image,updatetime FROM good_type WHERE (good_t_id = ?)
+2021-11-16 17:45:58.108 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.typeDao.selectList   : ==> Parameters: 5(Integer)
+2021-11-16 17:45:58.108 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.typeDao.selectList   : <==      Total: 0
+2021-11-16 17:45:58.110 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.inventoryDao.selectList    : ==>  Preparing: SELECT good_i_id,good_i_count,colors_id,goods_id,sizes_id FROM good_inventory WHERE (goods_id = ?)
+2021-11-16 17:45:58.110 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.inventoryDao.selectList    : ==> Parameters: 21(Integer)
+2021-11-16 17:45:58.111 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.inventoryDao.selectList    : <==      Total: 2
+2021-11-16 17:45:58.112 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.sizeDao.selectList   : ==>  Preparing: SELECT size_id,size_name FROM good_size WHERE (size_id = ?)
+2021-11-16 17:45:58.113 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.sizeDao.selectList   : ==> Parameters: 28(Integer)
+2021-11-16 17:45:58.114 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.sizeDao.selectList   : <==      Total: 1
+2021-11-16 17:45:58.115 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.ColorDao.selectList  : ==>  Preparing: SELECT color_id,color_name,color_url_img FROM good_color WHERE (color_id = ?)
+2021-11-16 17:45:58.115 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.ColorDao.selectList  : ==> Parameters: 28(Integer)
+2021-11-16 17:45:58.116 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.ColorDao.selectList  : <==      Total: 1
+2021-11-16 17:45:58.117 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.sizeDao.selectList   : ==>  Preparing: SELECT size_id,size_name FROM good_size WHERE (size_id = ?)
+2021-11-16 17:45:58.117 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.sizeDao.selectList   : ==> Parameters: 29(Integer)
+2021-11-16 17:45:58.118 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.sizeDao.selectList   : <==      Total: 1
+2021-11-16 17:45:58.118 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.ColorDao.selectList  : ==>  Preparing: SELECT color_id,color_name,color_url_img FROM good_color WHERE (color_id = ?)
+2021-11-16 17:45:58.118 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.ColorDao.selectList  : ==> Parameters: 29(Integer)
+2021-11-16 17:45:58.119 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.ColorDao.selectList  : <==      Total: 1
+2021-11-16 17:45:58.120 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.GoodsDetaDao.selectList    : ==>  Preparing: SELECT id,gdurl,goods_id,gdname_id FROM goods_goodsdetail WHERE (goods_id = ?)
+2021-11-16 17:45:58.120 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.GoodsDetaDao.selectList    : ==> Parameters: 21(Integer)
+2021-11-16 17:45:58.122 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.GoodsDetaDao.selectList    : <==      Total: 4
+2021-11-16 17:45:58.122 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : ==>  Preparing: SELECT data_id,gdname,gdvalue FROM goods_goodsdetailname WHERE (data_id = ?)
+2021-11-16 17:45:58.123 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : ==> Parameters: 12(Integer)
+2021-11-16 17:45:58.123 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : <==      Total: 1
+2021-11-16 17:45:58.124 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : ==>  Preparing: SELECT data_id,gdname,gdvalue FROM goods_goodsdetailname WHERE (data_id = ?)
+2021-11-16 17:45:58.124 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : ==> Parameters: 13(Integer)
+2021-11-16 17:45:58.125 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : <==      Total: 1
+2021-11-16 17:45:58.126 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : ==>  Preparing: SELECT data_id,gdname,gdvalue FROM goods_goodsdetailname WHERE (data_id = ?)
+2021-11-16 17:45:58.126 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : ==> Parameters: 10(Integer)
+2021-11-16 17:45:58.127 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : <==      Total: 1
+2021-11-16 17:45:58.128 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : ==>  Preparing: SELECT data_id,gdname,gdvalue FROM goods_goodsdetailname WHERE (data_id = ?)
+2021-11-16 17:45:58.128 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : ==> Parameters: 12(Integer)
+2021-11-16 17:45:58.128 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : <==      Total: 1
+2021-11-16 17:45:58.129 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.BrandDao.selectById  : ==>  Preparing: SELECT good_b_id,good_b_name,img,brandDesc,updatetime FROM good_brand WHERE good_b_id=?
+2021-11-16 17:45:58.129 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.BrandDao.selectById  : ==> Parameters: 6(Integer)
+2021-11-16 17:45:58.129 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.BrandDao.selectById  : <==      Total: 1
+2021-11-16 17:45:58.130 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.typeDao.selectList   : ==>  Preparing: SELECT good_t_id,good_t_name,parent_id,category_level,type_desc,image,updatetime FROM good_type WHERE (good_t_id = ?)
+2021-11-16 17:45:58.130 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.typeDao.selectList   : ==> Parameters: 5(Integer)
+2021-11-16 17:45:58.131 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.typeDao.selectList   : <==      Total: 0
+2021-11-16 17:45:58.131 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.inventoryDao.selectList    : ==>  Preparing: SELECT good_i_id,good_i_count,colors_id,goods_id,sizes_id FROM good_inventory WHERE (goods_id = ?)
+2021-11-16 17:45:58.131 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.inventoryDao.selectList    : ==> Parameters: 22(Integer)
+2021-11-16 17:45:58.132 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.inventoryDao.selectList    : <==      Total: 2
+2021-11-16 17:45:58.133 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.sizeDao.selectList   : ==>  Preparing: SELECT size_id,size_name FROM good_size WHERE (size_id = ?)
+2021-11-16 17:45:58.133 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.sizeDao.selectList   : ==> Parameters: 30(Integer)
+2021-11-16 17:45:58.134 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.sizeDao.selectList   : <==      Total: 1
+2021-11-16 17:45:58.135 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.ColorDao.selectList  : ==>  Preparing: SELECT color_id,color_name,color_url_img FROM good_color WHERE (color_id = ?)
+2021-11-16 17:45:58.135 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.ColorDao.selectList  : ==> Parameters: 30(Integer)
+2021-11-16 17:45:58.136 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.ColorDao.selectList  : <==      Total: 1
+2021-11-16 17:45:58.136 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.sizeDao.selectList   : ==>  Preparing: SELECT size_id,size_name FROM good_size WHERE (size_id = ?)
+2021-11-16 17:45:58.136 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.sizeDao.selectList   : ==> Parameters: 31(Integer)
+2021-11-16 17:45:58.137 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.sizeDao.selectList   : <==      Total: 1
+2021-11-16 17:45:58.138 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.ColorDao.selectList  : ==>  Preparing: SELECT color_id,color_name,color_url_img FROM good_color WHERE (color_id = ?)
+2021-11-16 17:45:58.138 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.ColorDao.selectList  : ==> Parameters: 31(Integer)
+2021-11-16 17:45:58.138 DEBUG 19024 --- [http-nio-9002-exec-3] c.example.goods.Dao.ColorDao.selectList  : <==      Total: 1
+2021-11-16 17:45:58.139 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.GoodsDetaDao.selectList    : ==>  Preparing: SELECT id,gdurl,goods_id,gdname_id FROM goods_goodsdetail WHERE (goods_id = ?)
+2021-11-16 17:45:58.139 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.GoodsDetaDao.selectList    : ==> Parameters: 22(Integer)
+2021-11-16 17:45:58.140 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.goods.Dao.GoodsDetaDao.selectList    : <==      Total: 1
+2021-11-16 17:45:58.141 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : ==>  Preparing: SELECT data_id,gdname,gdvalue FROM goods_goodsdetailname WHERE (data_id = ?)
+2021-11-16 17:45:58.141 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : ==> Parameters: 13(Integer)
+2021-11-16 17:45:58.142 DEBUG 19024 --- [http-nio-9002-exec-3] c.e.g.Dao.GoodsDetaNameDao.selectList    : <==      Total: 1
+2021-11-16 17:45:58.388  WARN 19024 --- [http-nio-9002-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [126] milliseconds.
+2021-11-16 17:45:58.388  WARN 19024 --- [http-nio-9002-exec-4] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [126] milliseconds.

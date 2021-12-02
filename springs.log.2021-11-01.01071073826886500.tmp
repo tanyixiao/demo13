@@ -1,0 +1,55 @@
+2021-11-01 01:09:08.846  INFO 2668 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-01 01:09:08.850  INFO 2668 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2021-11-01 01:09:08.851  INFO 2668 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-11-01 10:15:33.645  INFO 12676 --- [restartedMain] com.example.goods.GoodsApplication       : Starting GoodsApplication on MSI with PID 12676 (E:\vuefile\demo\demo13\GoodServer\Goods\target\classes started by xiao in E:\vuefile\demo\demo13)
+2021-11-01 10:15:33.647  INFO 12676 --- [restartedMain] com.example.goods.GoodsApplication       : No active profile set, falling back to default profiles: default
+2021-11-01 10:15:33.682  INFO 12676 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-01 10:15:33.682  INFO 12676 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-01 10:15:35.739  INFO 12676 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2021-11-01 10:15:35.746  INFO 12676 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-01 10:15:35.746  INFO 12676 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-11-01 10:15:35.934  INFO 12676 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-01 10:15:35.934  INFO 12676 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2252 ms
+2021-11-01 10:15:36.648  WARN 12676 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : This primary key of "good_c_id" is primitive !不建议如此请使用包装类 in Class: "com.example.goods.pojo.Good_comment"
+2021-11-01 10:15:37.911  WARN 12676 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : This primary key of "good_id" is primitive !不建议如此请使用包装类 in Class: "com.example.goods.pojo.Goods"
+2021-11-01 10:15:37.931  WARN 12676 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.example.goods.pojo.GoodBrand"
+2021-11-01 10:15:37.979  WARN 12676 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : This primary key of "color_id" is primitive !不建议如此请使用包装类 in Class: "com.example.goods.pojo.Good_color"
+2021-11-01 10:15:37.992  WARN 12676 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.example.goods.pojo.Good_detali"
+2021-11-01 10:15:38.003  WARN 12676 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : This primary key of "good_i_id" is primitive !不建议如此请使用包装类 in Class: "com.example.goods.pojo.Good_inventory"
+2021-11-01 10:15:38.014  WARN 12676 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : This primary key of "size_id" is primitive !不建议如此请使用包装类 in Class: "com.example.goods.pojo.Good_size"
+2021-11-01 10:15:38.024  WARN 12676 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.example.goods.pojo.Gooddetaliname"
+2021-11-01 10:15:38.036  WARN 12676 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : This primary key of "good_t_id" is primitive !不建议如此请使用包装类 in Class: "com.example.goods.pojo.Good_type"
+2021-11-01 10:15:38.048  WARN 12676 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : This primary key of "users_id" is primitive !不建议如此请使用包装类 in Class: "com.example.goods.pojo.User"
+2021-11-01 10:15:38.174  INFO 12676 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-01 10:15:38.534  INFO 12676 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-01 10:15:38.537  INFO 12676 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-11-01 10:15:38.595  INFO 12676 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2021-11-01 10:15:38.634  INFO 12676 --- [restartedMain] com.example.goods.GoodsApplication       : Started GoodsApplication in 5.857 seconds (JVM running for 8.767)
+2021-11-01 10:15:39.130  INFO 12676 --- [RMI TCP Connection(1)-192.168.35.1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-11-01 10:15:39.202  INFO 12676 --- [RMI TCP Connection(3)-192.168.35.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-01 10:15:39.202  INFO 12676 --- [RMI TCP Connection(3)-192.168.35.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-01 10:15:39.206  INFO 12676 --- [RMI TCP Connection(3)-192.168.35.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2021-11-01 10:15:43.623 DEBUG 12676 --- [http-nio-9002-exec-3] c.e.goods.Dao.goodsDao.selectCount       : ==>  Preparing: SELECT COUNT( * ) FROM goods WHERE deleted=0
+2021-11-01 10:15:43.638 DEBUG 12676 --- [http-nio-9002-exec-3] c.e.goods.Dao.goodsDao.selectCount       : ==> Parameters: 
+2021-11-01 10:15:43.651 DEBUG 12676 --- [http-nio-9002-exec-3] c.e.goods.Dao.goodsDao.selectCount       : <==      Total: 1
+2021-11-01 10:15:43.652 DEBUG 12676 --- [http-nio-9002-exec-3] c.e.goods.Dao.commentDao.selectCount     : ==>  Preparing: SELECT COUNT( * ) FROM good_comment
+2021-11-01 10:15:43.652 DEBUG 12676 --- [http-nio-9002-exec-3] c.e.goods.Dao.commentDao.selectCount     : ==> Parameters: 
+2021-11-01 10:15:43.805 DEBUG 12676 --- [http-nio-9002-exec-3] c.e.goods.Dao.commentDao.selectCount     : <==      Total: 1
+2021-11-01 10:15:43.806 DEBUG 12676 --- [http-nio-9002-exec-3] c.example.goods.Dao.UserDao.selectCount  : ==>  Preparing: SELECT COUNT( * ) FROM user WHERE deleted=0
+2021-11-01 10:15:43.807 DEBUG 12676 --- [http-nio-9002-exec-3] c.example.goods.Dao.UserDao.selectCount  : ==> Parameters: 
+2021-11-01 10:15:43.808 DEBUG 12676 --- [http-nio-9002-exec-3] c.example.goods.Dao.UserDao.selectCount  : <==      Total: 1
+2021-11-01 10:15:43.809 DEBUG 12676 --- [http-nio-9002-exec-3] c.e.goods.Dao.goodsDao.selectCount       : ==>  Preparing: SELECT COUNT( * ) FROM goods WHERE deleted=0
+2021-11-01 10:15:43.809 DEBUG 12676 --- [http-nio-9002-exec-3] c.e.goods.Dao.goodsDao.selectCount       : ==> Parameters: 
+2021-11-01 10:15:43.810 DEBUG 12676 --- [http-nio-9002-exec-3] c.e.goods.Dao.goodsDao.selectCount       : <==      Total: 1
+2021-11-01 17:05:01.529 DEBUG 12676 --- [http-nio-9002-exec-8] c.e.goods.Dao.goodsDao.selectCount       : ==>  Preparing: SELECT COUNT( * ) FROM goods WHERE deleted=0
+2021-11-01 17:05:01.531 DEBUG 12676 --- [http-nio-9002-exec-8] c.e.goods.Dao.goodsDao.selectCount       : ==> Parameters: 
+2021-11-01 17:05:01.605 DEBUG 12676 --- [http-nio-9002-exec-8] c.e.goods.Dao.goodsDao.selectCount       : <==      Total: 1
+2021-11-01 17:05:01.606 DEBUG 12676 --- [http-nio-9002-exec-8] c.e.goods.Dao.commentDao.selectCount     : ==>  Preparing: SELECT COUNT( * ) FROM good_comment
+2021-11-01 17:05:01.606 DEBUG 12676 --- [http-nio-9002-exec-8] c.e.goods.Dao.commentDao.selectCount     : ==> Parameters: 
+2021-11-01 17:05:01.748 DEBUG 12676 --- [http-nio-9002-exec-8] c.e.goods.Dao.commentDao.selectCount     : <==      Total: 1
+2021-11-01 17:05:01.748 DEBUG 12676 --- [http-nio-9002-exec-8] c.example.goods.Dao.UserDao.selectCount  : ==>  Preparing: SELECT COUNT( * ) FROM user WHERE deleted=0
+2021-11-01 17:05:01.748 DEBUG 12676 --- [http-nio-9002-exec-8] c.example.goods.Dao.UserDao.selectCount  : ==> Parameters: 
+2021-11-01 17:05:01.755 DEBUG 12676 --- [http-nio-9002-exec-8] c.example.goods.Dao.UserDao.selectCount  : <==      Total: 1
+2021-11-01 17:05:01.758 DEBUG 12676 --- [http-nio-9002-exec-8] c.e.goods.Dao.goodsDao.selectCount       : ==>  Preparing: SELECT COUNT( * ) FROM goods WHERE deleted=0
+2021-11-01 17:05:01.758 DEBUG 12676 --- [http-nio-9002-exec-8] c.e.goods.Dao.goodsDao.selectCount       : ==> Parameters: 
+2021-11-01 17:05:01.768 DEBUG 12676 --- [http-nio-9002-exec-8] c.e.goods.Dao.goodsDao.selectCount       : <==      Total: 1

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.goods.Dao.CustomerAddrMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.goods.pojo.CustomerAddr">
+            <id property="customerAddrId" column="customer_addr_id" jdbcType="INTEGER"/>
+            <result property="customerId" column="customer_id" jdbcType="INTEGER"/>
+            <result property="zip" column="zip" jdbcType="SMALLINT"/>
+            <result property="province" column="province" jdbcType="VARCHAR"/>
+            <result property="city" column="city" jdbcType="VARCHAR"/>
+            <result property="district" column="district" jdbcType="VARCHAR"/>
+            <result property="village" column="village" jdbcType="VARCHAR"/>
+            <result property="address" column="address" jdbcType="VARCHAR"/>
+            <result property="isDefault" column="is_default" jdbcType="TINYINT"/>
+            <result property="modifiedTime" column="modified_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        customer_addr_id,customer_id,zip,
+        province,city,district,
+        village,address,is_default,
+        modified_time
+    </sql>
+    <sql id="Base_Column_List1">
+        customer_id,zip,
+        province,city,district,
+        village,address,is_default,
+        modified_time
+    </sql>
+    <insert id="add">
+        INSERT INTO customer_addr(<include refid="Base_Column_List1"/>) VALUES
+        (#{customerAddr.customerId},#{customerAddr.zip},#{customerAddr.province},#{customerAddr.city},#{customerAddr.district},#{customerAddr.village},#{customerAddr.address},#{customerAddr.isDefault},#{customerAddr.modifiedTime});
+    </insert>
+    <update id="update">
+        UPDATE customer_addr SET customer_id =#{customerAddr.customerId}, zip =#{customerAddr.zip}, province = #{customerAddr.province}, city = #{customerAddr.city}, district = #{customerAddr.district},village=#{customerAddr.village},address = #{customerAddr.address}, is_default = #{customerAddr.isDefault}, modified_time = #{customerAddr.modifiedTime} WHERE customer_addr_id = #{id};
+    </update>
+    <delete id="delete">
+        delete from customer_addr where customer_addr_id=#{id}
+    </delete>
+    <select id="page" resultMap="BaseResultMap">
+        select <include refid="Base_Column_List"/> from customer_addr
+        <if test="id!=null and id!=''">
+            where customer_id=#{id}
+        </if>
+        limit #{start},#{size}
+    </select>
+    <select id="Count" resultType="java.lang.Long">
+        select count(*) from customer_addr
+    </select>
+</mapper>

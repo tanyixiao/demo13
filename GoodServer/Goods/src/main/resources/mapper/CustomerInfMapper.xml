@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.goods.Dao.CustomerInfMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.goods.pojo.CustomerInf">
+            <id property="customerInfId" column="customer_inf_id" jdbcType="INTEGER"/>
+            <result property="customerId" column="customer_id" jdbcType="INTEGER"/>
+            <result property="customerName" column="customer_name" jdbcType="VARCHAR"/>
+            <result property="identityCardType" column="identity_card_type" jdbcType="TINYINT"/>
+            <result property="identityCardNo" column="identity_card_no" jdbcType="VARCHAR"/>
+            <result property="mobilePhone" column="mobile_phone" jdbcType="INTEGER"/>
+            <result property="customerEmail" column="customer_email" jdbcType="VARCHAR"/>
+            <result property="gender" column="gender" jdbcType="CHAR"/>
+            <result property="userPoint" column="user_point" jdbcType="INTEGER"/>
+            <result property="registerTime" column="register_time" jdbcType="TIMESTAMP"/>
+            <result property="birthday" column="birthday" jdbcType="TIMESTAMP"/>
+            <result property="customerLevel" column="customer_level" jdbcType="TINYINT"/>
+            <result property="userMoney" column="user_money" jdbcType="DECIMAL"/>
+            <result property="modifiedTime" column="modified_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        customer_inf_id,customer_id,customer_name,
+        identity_card_type,identity_card_no,mobile_phone,
+        customer_email,gender,user_point,
+        register_time,birthday,customer_level,
+        user_money,modified_time
+    </sql>
+</mapper>

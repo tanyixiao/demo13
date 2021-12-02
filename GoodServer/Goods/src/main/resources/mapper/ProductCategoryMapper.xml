@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.goods.Dao.ProductCategoryMapper">
+    <resultMap id="BaseResultMap" type="com.example.goods.pojo.ProductCategory">
+            <id property="categoryId" column="category_id" jdbcType="SMALLINT"/>
+            <result property="categoryName" column="category_name" jdbcType="VARCHAR"/>
+            <result property="categoryCode" column="category_code" jdbcType="VARCHAR"/>
+            <result property="parentId" column="parent_id" jdbcType="SMALLINT"/>
+            <result property="categoryLevel" column="category_level" jdbcType="TINYINT"/>
+            <result property="categoryStatus" column="category_status" jdbcType="TINYINT"/>
+            <result property="modifiedTime" column="modified_time" jdbcType="TIMESTAMP"/>
+        <collection property="productCategoryList" column="category_id" select="lists" ofType="com.example.goods.pojo.ProductCategory"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        category_id,category_name,category_code,
+        parent_id,category_level,category_status,
+        modified_time
+    </sql>
+    <sql id="Base_Column_List1">
+        category_name,category_code,
+        parent_id,category_level,category_status,
+    </sql>
+    <select id="lists" resultMap="BaseResultMap">
+        select <include refid="Base_Column_List"/> from product_category where parent_id=#{category_id}
+    </select>
+    <insert id="add">
+        INSERT INTO product_category(<include refid="Base_Column_List1"/>) VALUES
+        <foreach collection="productCategoriess" item="productCategories" separator=",">
+            (#{productCategories.category_name}, #{productCategories.category_code}, #{productCategories.parent_id},
+            #{productCategories.category_level}, #{productCategories.category_status});
+        </foreach>
+    </insert>
+    <update id="update">
+        UPDATE product_category SET category_name = #{productCategories.category_name}, category_code = #{productCategories.category_code}, parent_id = #{productCategories.parent_id}, category_level = #{productCategories.category_level}, category_status = #{productCategories.categoryStatus} WHERE category_id = #{id};
+    </update>
+    <delete id="delete">
+        delete from product_category where category_id=#{id}
+    </delete>
+    <select id="page" resultMap="BaseResultMap">
+        select <include refid="Base_Column_List"/> from product_category
+        <if test="id!=null and id!=''">
+            where parent_id=#{id}
+        </if>
+        order by modified_time limit #{start},#{size}
+    </select>
+    <select id="Count" resultType="java.lang.Long">
+        select COUNT(*) from product_category
+    </select>
+    <select id="selectByIds" resultMap="BaseResultMap">
+        select <include refid="Base_Column_List"/> from product_category where category_id=#{id}
+    </select>
+    <select id="selectByIds1" resultMap="BaseResultMap">
+        select <include refid="Base_Column_List"/> from product_category where category_id=#{id}
+    </select>
+</mapper>

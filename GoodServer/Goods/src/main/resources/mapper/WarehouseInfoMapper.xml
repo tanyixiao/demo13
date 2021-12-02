@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.goods.Dao.WarehouseInfoMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.goods.pojo.WarehouseInfo">
+            <id property="wId" column="w_id" jdbcType="SMALLINT"/>
+            <result property="warehouseSn" column="warehouse_sn" jdbcType="VARCHAR"/>
+            <result property="warehoustName" column="warehoust_name" jdbcType="VARCHAR"/>
+            <result property="warehousePhone" column="warehouse_phone" jdbcType="VARCHAR"/>
+            <result property="contact" column="contact" jdbcType="VARCHAR"/>
+            <result property="province" column="province" jdbcType="VARCHAR"/>
+            <result property="city" column="city" jdbcType="VARCHAR"/>
+            <result property="distrct" column="distrct" jdbcType="VARCHAR"/>
+            <result property="address" column="address" jdbcType="VARCHAR"/>
+            <result property="warehouseStatus" column="warehouse_status" jdbcType="INTEGER"/>
+            <result property="modifiedTime" column="modified_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        w_id,warehouse_sn,warehoust_name,
+        warehouse_phone,contact,province,
+        city,distrct,address,
+        warehouse_status,modified_time
+    </sql>
+</mapper>

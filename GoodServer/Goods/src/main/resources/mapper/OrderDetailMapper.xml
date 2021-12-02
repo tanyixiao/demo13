@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.goods.Dao.OrderDetailMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.goods.pojo.OrderDetail">
+            <id property="orderDetailId" column="order_detail_id" jdbcType="INTEGER"/>
+            <result property="orderId" column="order_id" jdbcType="INTEGER"/>
+            <result property="productId" column="product_id" jdbcType="INTEGER"/>
+            <result property="productName" column="product_name" jdbcType="VARCHAR"/>
+            <result property="productCnt" column="product_cnt" jdbcType="INTEGER"/>
+            <result property="productPrice" column="product_price" jdbcType="DECIMAL"/>
+            <result property="averageCost" column="average_cost" jdbcType="DECIMAL"/>
+            <result property="weight" column="weight" jdbcType="FLOAT"/>
+            <result property="feeMoney" column="fee_money" jdbcType="DECIMAL"/>
+            <result property="storeId" column="store_id" jdbcType="INTEGER"/>
+            <result property="modifiedTime" column="modified_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        order_detail_id,order_id,product_id,
+        product_name,product_cnt,product_price,
+        average_cost,weight,fee_money,
+        store_id,modified_time
+    </sql>
+    <sql id="Base_Column_List1">
+        order_id,product_id,
+        product_name,product_cnt,product_price,
+        average_cost,weight,fee_money,
+        store_id,modified_time
+    </sql>
+    <insert id="add" useGeneratedKeys="true" keyColumn="order_id">
+        insert into order_detail(<include refid="Base_Column_List1"/>) values
+        <foreach collection="orderDetailss" item="orderDetails" separator=",">
+            (#{orderDetails.orderId},
+            #{orderDetails.productId},
+            #{orderDetails.productName},
+            #{orderDetails.productCnt},
+            #{orderDetails.productPrice},
+            #{orderDetails.averageCost},
+            #{orderDetails.weight},
+            #{orderDetails.feeMoney},
+            #{orderDetails.storeId},
+            #{orderDetails.modifiedTime})
+        </foreach>
+    </insert>
+    <update id="update">
+        update order_detail set(order_id=#{orderDetails.orderId},product_id=#{orderDetails.productId},
+                                   product_name=#{orderDetails.productName},product_cnt=#{orderDetails.productCnt},product_price=#{orderDetails.productPrice},
+                                   average_cost=#{orderDetails.averageCost},weight=#{orderDetails.weight},fee_money=#{orderDetails.feeMoney},
+                                   store_id=#{orderDetails.storeId},modified_time=#{orderDetails.modifiedTime}
+                                   ) where order_detail_id=#{id}
+    </update>
+    <delete id="delete">
+        delete from order_detail where order_detail_id=#{id}
+    </delete>
+    <select id="page" resultMap="BaseResultMap">
+        select <include refid="Base_Column_List"/> from order_detail order by modified_time asc limit #{start},#{size}
+    </select>
+    <select id="Count" resultType="java.lang.Long">
+        select COUNT(*) from order_detail
+    </select>
+</mapper>

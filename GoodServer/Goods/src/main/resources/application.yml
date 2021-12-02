@@ -1,0 +1,37 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: Goods
+  datasource:
+    druid:
+      username: xiaotan
+      password: 1
+      url: jdbc:mysql://192.168.35.130:3306/spring_clouds03?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT&allowPublicKeyRetrieval=true
+      drive: com.mysql.cj.jdbc.Driver
+  servlet:
+    multipart:
+      max-request-size: 50MB
+      max-file-size: 50MB
+mybatis-plus:
+  type-aliases-package: com.example.goods.pojo
+  mapper-locations: classpath:mapper/*.xml
+  global-config:
+    db-config:
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+logging:
+  level:
+    com.example.goods: debug
+  file:
+    path: D:\springlogging\
+    name: springs.log
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+jwt:
+  header: Authorization
+  expiration: 7200000
+  token: Authorization

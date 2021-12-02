@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.goods.Dao.CustomerLoginMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.goods.pojo.CustomerLogin">
+            <id property="customerId" column="customer_id" jdbcType="INTEGER"/>
+            <result property="loginName" column="login_name" jdbcType="VARCHAR"/>
+            <result property="password" column="password" jdbcType="VARCHAR"/>
+            <result property="userStats" column="user_stats" jdbcType="TINYINT"/>
+            <result property="modifiedTime" column="modified_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        customer_id,login_name,password,
+        user_stats,modified_time
+    </sql>
+    <select id="selectByName" resultMap="BaseResultMap">
+        select <include refid="Base_Column_List"/> from customer_login where login_name=#{username} and password=#{password}
+    </select>
+    <select id="ByName" resultType="java.lang.String">
+        SELECT r.code FROM custmoer_login_role e LEFT JOIN customer_login c ON e.user_id=c.customer_id LEFT JOIN custmoer_role r ON r.id=e.role_id WHERE c.login_name=#{username}
+    </select>
+</mapper>

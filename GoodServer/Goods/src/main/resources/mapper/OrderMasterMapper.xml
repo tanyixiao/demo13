@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.goods.Dao.OrderMasterMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.goods.pojo.OrderMaster">
+            <id property="orderId" column="order_id" jdbcType="INTEGER"/>
+            <result property="orderSn" column="order_sn" jdbcType="VARCHAR"/>
+            <result property="customerId" column="customer_id" jdbcType="INTEGER"/>
+            <result property="shippingUser" column="shipping_user" jdbcType="VARCHAR"/>
+            <result property="province" column="province" jdbcType="VARCHAR"/>
+            <result property="city" column="city" jdbcType="VARCHAR"/>
+            <result property="district" column="district" jdbcType="VARCHAR"/>
+            <result property="address" column="address" jdbcType="VARCHAR"/>
+            <result property="paymentMethod" column="payment_method" jdbcType="INTEGER"/>
+            <result property="orderMoney" column="order_money" jdbcType="DECIMAL"/>
+            <result property="districtMoney" column="district_money" jdbcType="DECIMAL"/>
+            <result property="shippingMoney" column="shipping_money" jdbcType="DECIMAL"/>
+            <result property="paymentMoney" column="payment_money" jdbcType="DECIMAL"/>
+            <result property="shippingCompName" column="shipping_comp_name" jdbcType="VARCHAR"/>
+            <result property="shippingSn" column="shipping_sn" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="shippingTime" column="shipping_time" jdbcType="TIMESTAMP"/>
+            <result property="payTime" column="pay_time" jdbcType="TIMESTAMP"/>
+            <result property="receiveTime" column="receive_time" jdbcType="TIMESTAMP"/>
+            <result property="orderStatus" column="order_status" jdbcType="TINYINT"/>
+            <result property="orderPoint" column="order_point" jdbcType="INTEGER"/>
+            <result property="invoiceTime" column="invoice_time" jdbcType="VARCHAR"/>
+            <result property="modifiedTime" column="modified_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        order_id,order_sn,customer_id,
+        shipping_user,province,city,
+        district,address,payment_method,
+        order_money,district_money,shipping_money,
+        payment_money,shipping_comp_name,shipping_sn,
+        create_time,shipping_time,pay_time,
+        receive_time,order_status,order_point,
+        invoice_time,modified_time
+    </sql>
+    <sql id="Base_Column_List1">
+        order_sn,customer_id,
+    shipping_user,province,city,
+    district,address,payment_method,
+    order_money,district_money,shipping_money,
+    payment_money,shipping_comp_name,shipping_sn,
+    create_time,shipping_time,pay_time,
+    receive_time,order_status,order_point,
+    invoice_time,modified_time
+    </sql>
+    <insert id="add" useGeneratedKeys="true" keyColumn="order_id" keyProperty="orderId">
+        insert into order_master(<include refid="Base_Column_List1"/>) values
+        <foreach collection="orderMasters" item="orderMaster" separator=",">
+            (#{orderMaster.orderSn},
+            #{orderMaster.customerId},
+            #{orderMaster.shippingUser},
+            #{orderMaster.province},
+            #{orderMaster.city},
+            #{orderMaster.district},
+            #{orderMaster.address},
+            #{orderMaster.paymentMethod},
+            #{orderMaster.orderMoney},
+            #{orderMaster.districtMoney},
+            #{orderMaster.shippingMoney},
+            #{orderMaster.paymentMoney},
+            #{orderMaster.shippingCompName},
+            #{orderMaster.shippingSn},
+            #{orderMaster.createTime},
+            #{orderMaster.shippingTime},
+            #{orderMaster.payTime},
+            #{orderMaster.receiveTime},
+            #{orderMaster.orderStatus},
+            #{orderMaster.orderPoint},
+            #{orderMaster.invoiceTime},
+            #{orderMaster.modifiedTime})
+        </foreach>
+    </insert>
+    <update id="update">
+        update order_master set order_sn=#{orderMaster.orderSn},customer_id=#{orderMaster.customerId},
+                                shipping_user=#{orderMaster.shippingUser},province=#{orderMaster.province},city=#{orderMaster.city},
+                                district=#{orderMaster.district},address=#{orderMaster.address},payment_method=#{orderMaster.paymentMethod},
+                                order_money=#{orderMaster.orderMoney},district_money=#{orderMaster.districtMoney},shipping_money=#{orderMaster.shippingMoney},
+                                payment_money=#{orderMaster.paymentMoney},shipping_comp_name=#{orderMaster.shippingCompName},shipping_sn=#{orderMaster.shippingSn},
+                                create_time=#{orderMaster.createTime},shipping_time=#{orderMaster.shippingTime},pay_time=#{orderMaster.payTime},
+                                receive_time=#{orderMaster.receiveTime},order_status=#{orderMaster.orderStatus},order_point=#{orderMaster.orderPoint},
+                                invoice_time=#{orderMaster.invoiceTime},modified_time=#{orderMaster.modifiedTime} where order_id=#{id}
+    </update>
+    <delete id="delete">
+        delete from order_master where order_id=#{id}
+    </delete>
+    <select id="page" resultMap="BaseResultMap">
+        select <include refid="Base_Column_List"/> from order_master
+        <if test="id!='' and id!=null ">
+            where customer_id=#{id}
+        </if>
+        order by create_time asc limit #{start},#{size}
+    </select>
+    <select id="Count" resultType="java.lang.Long">
+        select COUNT(*) from order_master
+    </select>
+    <select id="selectByIds" resultMap="BaseResultMap">
+        select <include refid="Base_Column_List"/> from order_master where order_id=#{id}
+    </select>
+</mapper>

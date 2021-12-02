@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.goods.Dao.ProductInfoMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.goods.pojo.ProductInfo">
+            <id property="productId" column="product_id" jdbcType="INTEGER"/>
+            <id property="productCore" column="product_core" jdbcType="CHAR"/>
+            <result property="productName" column="product_name" jdbcType="VARCHAR"/>
+            <result property="brandId" column="brand_id" jdbcType="INTEGER"/>
+            <result property="oneCategoryId" column="one_category_id" jdbcType="SMALLINT"/>
+            <result property="twoCategoryId" column="two_category_id" jdbcType="SMALLINT"/>
+            <result property="threeCategoryId" column="three_category_id" jdbcType="SMALLINT"/>
+            <result property="supplierId" column="supplier_id" jdbcType="INTEGER"/>
+            <result property="price" column="price" jdbcType="DECIMAL"/>
+            <result property="averageCost" column="average_cost" jdbcType="DECIMAL"/>
+            <result property="publishStatus" column="publish_status" jdbcType="TINYINT"/>
+            <result property="auditStatus" column="audit_status" jdbcType="TINYINT"/>
+            <result property="weight" column="weight" jdbcType="FLOAT"/>
+            <result property="length" column="length" jdbcType="FLOAT"/>
+            <result property="height" column="height" jdbcType="FLOAT"/>
+            <result property="width" column="width" jdbcType="FLOAT"/>
+            <result property="colorType" column="color_type" jdbcType="OTHER"/>
+            <result property="productionDate" column="production_date" jdbcType="TIMESTAMP"/>
+            <result property="shelfLife" column="shelf_life" jdbcType="INTEGER"/>
+            <result property="descript" column="descript" jdbcType="VARCHAR"/>
+            <result property="indate" column="indate" jdbcType="TIMESTAMP"/>
+            <result property="modifiedTime" column="modified_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        product_id,product_core,product_name,
+        brand_id,one_category_id,two_category_id,
+        three_category_id,supplier_id,price,
+        average_cost,publish_status,audit_status,
+        weight,length,height,
+        width,color_type,production_date,
+        shelf_life,descript,indate,
+        modified_time
+    </sql>
+    <sql id="Base_Column_List1">
+        product_core,product_name,
+        brand_id,one_category_id,two_category_id,
+        three_category_id,supplier_id,price,
+        average_cost,publish_status,audit_status,
+        weight,length,height,
+        width,color_type,production_date,
+        shelf_life,descript,indate,
+        modified_time
+    </sql>
+    <insert id="add">
+        INSERT INTO product_info(<include refid="Base_Column_List1"/>) VALUES
+        <foreach collection="productInfoss" item="productInfos" separator=",">
+            (#{productInfos.product_core},#{productInfos.product_name},#{productInfos.brand_id},#{productInfos.one_category_id},#{productInfos.two_category_id},#{productInfos.three_category_id},#{productInfos.supplier_id},#{productInfos.price}, #{productInfos.price},#{productInfos.publish_status}, #{productInfos.audit_status}, #{productInfos.weight},#{productInfos.length},#{productInfos.length},#{productInfos.width},#{productInfos.color_type},#{productInfos.production_date},#{productInfos.shelf_life},#{productInfos.descript},#{productInfos.indate},#{productInfos.modified_time})
+        </foreach>
+    </insert>
+    <update id="update">
+        UPDATE product_info SET product_name = #{productInfos.productName}, brand_id = #{productInfos.brandId}, one_category_id = #{productInfos.oneCategoryId}, two_category_id = #{productInfos.twoCategoryId}, three_category_id = #{productInfos.threeCategoryId}, supplier_id = #{productInfos.supplierId}, price = #{productInfos.price}, average_cost =#{productInfos.averageCost}, publish_status = #{productInfos.publishStatus}, audit_status = #{productInfos.auditStatus}, weight = #{productInfos.weight},length = #{productInfos.length}, height = #{productInfos.height}, width = #{productInfos.width},color_type = #{productInfos.colorType}, production_date =#{productInfos.productionDate}, shelf_life = #{productInfos.shelfLife}, descript = #{productInfos.descript}, indate = #{productInfos.indate},modified_time = #{productInfos.modifiedTime} WHERE product_id = #{id} AND product_core = #{productInfos.productCore};
+    </update>
+    <delete id="delete">
+        delete from product_info where product_id=#{id}
+    </delete>
+    <select id="page" resultMap="BaseResultMap">
+        select <include refid="Base_Column_List"/> from product_info
+        <if test="id!=null and id!=''">
+            where product_id=#{id}
+        </if>
+        order by production_date asc limit #{start},#{size}
+    </select>
+    <select id="Count" resultType="java.lang.Long">
+        select COUNT(*) from product_info
+    </select>
+    <select id="selectByIds" resultMap="BaseResultMap">
+        select <include refid="Base_Column_List"/> from product_info where product_id=#{id}
+    </select>
+</mapper>
